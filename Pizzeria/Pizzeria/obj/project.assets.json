@@ -8,25 +8,25 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\goloo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Дима\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Study\\NET17\\I_love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
+      "projectUniqueName": "E:\\TMS-lesson\\Pizza\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
       "projectName": "Pizzeria",
-      "projectPath": "D:\\Study\\NET17\\I_love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
-      "packagesPath": "C:\\Users\\goloo\\.nuget\\packages\\",
-      "outputPath": "D:\\Study\\NET17\\I_love_Frontend\\Pizzeria\\Pizzeria\\obj\\",
+      "projectPath": "E:\\TMS-lesson\\Pizza\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
+      "packagesPath": "C:\\Users\\Дима\\.nuget\\packages\\",
+      "outputPath": "E:\\TMS-lesson\\Pizza\\I_Love_Frontend\\Pizzeria\\Pizzeria\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\goloo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Дима\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
