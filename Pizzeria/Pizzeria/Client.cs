@@ -4,10 +4,7 @@ using System.Text;
 
 namespace Pizzeria
 {
-    public class Pizza: Order
+    class Client
     {
-
     }
-
-    public enum PizzaSize { Small, Medium, Large }
 }
