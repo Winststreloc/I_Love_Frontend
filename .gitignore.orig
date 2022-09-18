@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+/Pizzeria/.vs/Pizzeria/v16/.suo
+=======
 ﻿# Created by https://www.toptal.com/developers/gitignore/api/dotnetcore,csharp
 # Edit at https://www.toptal.com/developers/gitignore?templates=dotnetcore,csharp
 
@@ -409,3 +412,4 @@ obj/
 /wwwroot/node_modules
 
 # End of https://www.toptal.com/developers/gitignore/api/dotnetcore,csharp
+>>>>>>> origin/Feature/task9
