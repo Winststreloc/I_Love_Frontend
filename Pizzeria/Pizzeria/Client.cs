@@ -13,17 +13,16 @@ namespace Pizzeria
         public Client(string name)
         {
             Name = name;
-            Orders = new List<Order>();
         }
         public Order Get(int id)
         {
             return Orders.FirstOrDefault(p => p.Id == id);
         }
-        public void AddOrder(string name, Order order)
+        public Order CreateOrder(string clientName, PizzaSize size, PizzaName pizzaName, bool deliver)
         {
-            Name = name;
-            order.Id += 1;
-            Orders.Add(order);
+            Name = clientName;
+            Order order = new Order(size, pizzaName, deliver, clientName);
+            return order;
         }
         public void DeleteOrder(int id)
         {

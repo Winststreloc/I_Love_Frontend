@@ -6,7 +6,10 @@ namespace Pizzeria
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
+            ShopAssistant assistant = new ShopAssistant("Egor");
+            Client client = new Client("Anton");
+            assistant.AcceptOrder(client.CreateOrder(client.Name, PizzaSize.Small, PizzaName.Pepperoni, false));
+
+        } 
     }
 }
