@@ -6,7 +6,7 @@ namespace Pizzeria
 {
     class Number
     {
-        public string CallNumber { get; set; }
+        public long CallNumber { get; set; }
         public void Call()
         {
             Console.WriteLine($"+{CallNumber}");
