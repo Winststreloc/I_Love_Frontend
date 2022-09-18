@@ -6,22 +6,22 @@ namespace Pizzeria
 {
     public class ShopAssistant : Employee
     {
-        // public Order Order { get; set; }
-        // private Cook _cook;
-         public Cook Cook { get; set; }
+        /*
+        in Program
+
+        Client client = new Client();
+        Deliveryman deliveryman = new Deliveryman{Client=client};
+        ShopAssiistant assistant = new ShopAssistant{Deliveryman=deliveryman};
+        */
+        public Cook Cook { get; set; } = new Cook();
+        public Deliveryman Deliveryman { get; set; } 
 
         public void AcceptOrder(Order order)
         {
             Console.WriteLine("Order accepted");
-            // SendOrderCook(order);
             //в классе Order должно быть свойство Pizza, в которой будет выбранная пицца
-            var pizza = order.Pizza;
-            Cook.CreatePizza(pizza);
+            var pizza = Cook.CreatePizza(order.Pizza);
+            Deliveryman.Deliver(pizza);
         }
-        //private void SendOrderCook(Order order)
-        //{
-        //    Cook.Order = order;//передали в свойства повара Order order
-        //}
-
     }
 }

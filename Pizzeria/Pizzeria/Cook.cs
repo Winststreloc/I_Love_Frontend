@@ -6,21 +6,21 @@ namespace Pizzeria
 {
     public class Cook : Employee
     {
-        private Pizza _pizza = new Pizza();
-        //public Order Order { get; set; }
         private readonly List<Equipments> _equipments = new List<Equipments>
         {
-            new Furnace(), 
+            //new Furnace(), 
             //еще наследники класса Equipments
         };
-        public void CreatePizza(Pizza pizza)
+        public Pizza CreatePizza(Pizza pizza)
         {
             //Надо знать методы Equipment
             foreach (var equipment in _equipments)
             {
+                //должен быть метод Use в во все наследниках классе Equipment
                 equipment.Use(pizza);
             }
-
+            
+            return pizza;
         }
 
     }

@@ -6,6 +6,7 @@ namespace Pizzeria
 {
     public class Employee
     {
+        public int Salary { get; set; }
         public string Name { get; set; }
         public int Age { get; set; }
         public int WorkExperience { get; set; }
