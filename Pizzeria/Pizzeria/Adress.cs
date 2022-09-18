@@ -13,15 +13,8 @@ namespace Pizzeria
       
         public void GiveAdress()  
         {
-            string fullAdress = Country + Sity + Street + Home;   
-            List<string> Adresses = new List<string>();
-            Adresses.Add(fullAdress);
-            
-            foreach (var adress in Adresses)
-            {
-                Console.WriteLine(adress);
-
-            }
+            string fullAdress = Country + Sity + Street + Home;
+            Console.WriteLine($"ADRESS {fullAdress}"); 
         }
 
 
