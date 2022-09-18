@@ -4,11 +4,14 @@ using System.Text;
 
 namespace Pizzeria
 {
-    public class Pizza: Order
+    public class Pizza
     {
+        public string Testo { get; set; }
+        public PizzaSize PizzaSize { get; }
+        public PizzaName PizzaName { get; }
         public Pizza()
         {
-
+            
         }
 
     }

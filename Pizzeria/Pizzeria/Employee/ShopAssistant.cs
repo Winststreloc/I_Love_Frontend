@@ -13,15 +13,21 @@ namespace Pizzeria
         Deliveryman deliveryman = new Deliveryman{Client=client};
         ShopAssiistant assistant = new ShopAssistant{Deliveryman=deliveryman};
         */
+        List<Order> Orders { get; }
         public Cook Cook { get; set; } = new Cook();
         public Deliveryman Deliveryman { get; set; } 
+        public ShopAssistant(string name)
+        {
+            Name = name;
+            Orders = new List<Order>();
+        }
 
         public void AcceptOrder(Order order)
         {
+            order.Id += 1;
+            Orders.Add(order);
             Console.WriteLine("Order accepted");
-            //в классе Order должно быть свойство Pizza, в которой будет выбранная пицца
-            var pizza = Cook.CreatePizza(order.Pizza);
-            Deliveryman.Deliver(pizza);
+            //Deliveryman.Deliver();
         }
     }
 }
