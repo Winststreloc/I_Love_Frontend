@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Pizzeria
@@ -12,6 +13,11 @@ namespace Pizzeria
         public Client(string name)
         {
             Name = name;
+            Orders = new List<Order>();
+        }
+        public Order Get(int id)
+        {
+            return Orders.FirstOrDefault(p => p.Id == id);
         }
         public void AddOrder(string name, Order order)
         {
@@ -21,7 +27,7 @@ namespace Pizzeria
         }
         public void DeleteOrder(int id)
         {
-            var order = Orders.Find()
+            var order = Get(id);
             Orders.Remove(order);
         }
 
