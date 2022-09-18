@@ -6,12 +6,20 @@ namespace Pizzeria
 {
     public class Pizzeria
     {
-        public string NumberPizzeria { get; set; }
-        public string AdressPizzeria { get; set; }
-
-        public void Advertisement()
+        public string Name { get; set; }
+        public Pizzeria(string name)
         {
-            Console.WriteLine($"Pleas visit to us at {AdressPizzeria} or call us by Phone Number{NumberPizzeria}");
+            Name = name;
+            Adress a = new Adress();
+            a.Country = "Italy";
+            a.Sity = "Rome";
+            a.Street = "Via Veneto";
+            a.Home = "35";
+            a.GiveAdress();
         }
+
+
+       
     }
+   
 }

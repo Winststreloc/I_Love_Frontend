@@ -6,10 +6,14 @@ namespace Pizzeria
 {
     class Adress
     {
-        public string CustumerAdress { get; set; }
-        public void Delivery()
+        public string Country { get; set; }
+        public string Sity { get; set; }
+        public string Street { get; set; }
+        public string Home {get; set;}
+      
+        public void GiveAdress()
         {
-            Console.WriteLine($"Delivery order to {CustumerAdress}");
+            Console.WriteLine($" {Country} {Sity} {Street} {Home} ");
         }
 
 
