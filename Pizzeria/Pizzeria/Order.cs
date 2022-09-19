@@ -13,10 +13,11 @@ namespace Pizzeria
         public int Id { get; set; }
         public string ClientName { get; set; }
         public bool NeedDelivery { get; set; }
+        public Pizza Pizza { get; set; }
 
-
-        public Order(PizzaSize size, PizzaName pizzaName, bool deliver, string clientName)
+        public Order(Pizza pizza, bool deliver, string clientName)
         {
+            Pizza = pizza;
             Id = 1;
             NeedDelivery = deliver;
             ClientName = clientName;
