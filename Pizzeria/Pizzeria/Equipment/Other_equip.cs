@@ -12,7 +12,7 @@ namespace Pizzeria
         {
 
         }
-        public Other_equip(decimal value,string type)
+        public Other_equip(decimal value, string type)
         {
             Type = type;
             Value = value;
