@@ -19,10 +19,10 @@ namespace Pizzeria
         {
             return Orders.FirstOrDefault(p => p.Id == id);
         }
-        public Order CreateOrder(string clientName, PizzaName pizzaName, PizzaSize pizzaSize, bool deliver)
+        public Order CreateOrder(string clientName, PizzaName pizzaName, PizzaSize pizzaSize, bool deliver, Adress clientLocation)
         {
             Name = clientName;
-            Order order = new Order(pizzaName, pizzaSize, deliver, clientName);
+            Order order = new Order(pizzaName, pizzaSize, deliver, clientName, clientLocation);
             return order;
         }
         public void DeleteOrder(int id)

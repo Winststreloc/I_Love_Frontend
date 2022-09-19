@@ -8,7 +8,7 @@ namespace Pizzeria
     {
         public List<Order> Orders { get; } = new List<Order>();
         public Cook Cook { get; set; } = new Cook();
-        public Deliveryman Deliveryman { get; set; } 
+        public Deliveryman Deliveryman { get; } 
         public ShopAssistant(string name)
         {
             Name = name;
@@ -23,7 +23,7 @@ namespace Pizzeria
 
             if(order.NeedDelivery)
             {
-                Deliveryman.Deliver(pizza);
+                Deliveryman.Deliver(pizza, order.ClientName, order.ClientLocation); 
             }
             else
             {

@@ -7,9 +7,9 @@ namespace Pizzeria
     public class Deliveryman: Employee
     {
         public Client Client { get; set; }
-        public void Deliver(Pizza pizza)
+        public void Deliver(Pizza pizza, string clientName, Adress location)
         {
-            Console.WriteLine($"order {pizza.PizzaName}send to {Client.Name} to adress {Client.Location} ");
+            Console.WriteLine($"order {pizza.PizzaName} send to {clientName} to adress {location}.");
         }
     }
 }
