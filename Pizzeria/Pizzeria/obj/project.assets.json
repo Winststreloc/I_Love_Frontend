@@ -8,23 +8,24 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Дарья Заблоцкая\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\goloo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\prPizza\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
+      "projectUniqueName": "D:\\Study\\NET17\\I_love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
       "projectName": "Pizzeria",
-      "projectPath": "A:\\prPizza\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
-      "packagesPath": "C:\\Users\\Дарья Заблоцкая\\.nuget\\packages\\",
-      "outputPath": "A:\\prPizza\\I_Love_Frontend\\Pizzeria\\Pizzeria\\obj\\",
+      "projectPath": "D:\\Study\\NET17\\I_love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
+      "packagesPath": "C:\\Users\\goloo\\.nuget\\packages\\",
+      "outputPath": "D:\\Study\\NET17\\I_love_Frontend\\Pizzeria\\Pizzeria\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Дарья Заблоцкая\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\goloo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -55,8 +56,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
       }
     }
   }

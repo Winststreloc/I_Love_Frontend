@@ -19,7 +19,7 @@ namespace Pizzeria
 
         public Order(PizzaName pizzaName,PizzaSize pizzaSize, bool deliver, string clientName, Adress clientlocation)
         {
-            Id = 1;
+            Id = 0;
             PizzaName = pizzaName;
             PizzaSize = pizzaSize;
             NeedDelivery = deliver;
