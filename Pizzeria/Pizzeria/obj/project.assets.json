@@ -8,17 +8,12 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\Дарья Заблоцкая\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
-=======
-    "C:\\Users\\vasilevskiy\\.nuget\\packages\\": {}
->>>>>>> Feature/vasilevskiy/Eqipment
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "A:\\prPizza\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
       "projectName": "Pizzeria",
       "projectPath": "A:\\prPizza\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
@@ -30,16 +25,6 @@
       ],
       "configFilePaths": [
         "C:\\Users\\Дарья Заблоцкая\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "D:\\repos\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
-      "projectName": "Pizzeria",
-      "projectPath": "D:\\repos\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
-      "packagesPath": "C:\\Users\\vasilevskiy\\.nuget\\packages\\",
-      "outputPath": "D:\\repos\\I_Love_Frontend\\Pizzeria\\Pizzeria\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\vasilevskiy\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> Feature/vasilevskiy/Eqipment
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
