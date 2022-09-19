@@ -23,7 +23,7 @@ namespace Pizzeria
 
             if(order.NeedDelivery)
             {
-                Deliveryman.Deliver(pizza, order.ClientName, order.ClientLocation); 
+                Deliveryman.Deliver(pizza); 
             }
             else
             {

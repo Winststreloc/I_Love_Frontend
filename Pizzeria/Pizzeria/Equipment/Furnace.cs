@@ -13,16 +13,10 @@ namespace Pizzeria
         private int Capacity { get; set; }
         private double Cost { get; set; }
         private const double _tariff = 0.2;
-        public Furnace()
-        {
 
-        }
-
-        public Furnace(Equipment obj,string firm,int capacity)
+        public Furnace(string name, int number) : base(name,number)
         {
-            _name = obj.name_of_equip;
-            _inventory_number = obj.inventory_number;
-            Firm = firm;
+            
         }
         public double Electricity_costs(Furnace obj, double time)
         {

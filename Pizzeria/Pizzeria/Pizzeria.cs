@@ -11,7 +11,7 @@ namespace Pizzeria
         public Pizzeria()
         {
             Name = "Little Italy";
-            Adress AdressPizzeria = new Adress("Italy", "Romue", "Yacuba colasa", "35");
+            Adress AdressPizzeria = new Adress("Belarus", "Minsk", "Timirazeva", "67");
             Console.WriteLine(AdressPizzeria.FullAdress);
         } 
     }
