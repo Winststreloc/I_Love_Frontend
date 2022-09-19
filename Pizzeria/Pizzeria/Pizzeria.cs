@@ -6,25 +6,14 @@ namespace Pizzeria
 {
     public class Pizzeria
     {
-        public string Name { get; set; }
+        public string Name { get; }
+        public string AdressPizzeria { get; }
         public Pizzeria()
         {
-            Name = "Defacto";
-            Adress a = new Adress();
-            a.Country = "Italy";
-            a.Sity = " Rome";
-            a.Street = " Via Veneto";
-            a.Home = " 35";
-            a.GiveAdress();
-            Number b = new Number();
-            b.CallNumber = 375298888888 ;
-            
-            
-
-        }
-
-
-       
+            Name = "Little Italy";
+            Adress AdressPizzeria = new Adress("Italy", "Romue", "Yacuba colasa", "35");
+            Console.WriteLine(AdressPizzeria.FullAdress);
+        } 
     }
    
 }

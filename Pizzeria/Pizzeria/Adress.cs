@@ -10,14 +10,16 @@ namespace Pizzeria
         public string Sity { get; set; }
         public string Street { get; set; }
         public string Home {get; set;}
-        public string FullAdress { get; set; }
-      
-        public void GiveAdress()  
+        public string FullAdress { get; }
+        public Adress(string country,string sity,string street,string home)
         {
-            FullAdress = Country + Sity + Street + Home;
-            Console.WriteLine($"ADRESS {FullAdress}");
-            
+            Country = country;
+            Sity = sity;
+            Street = street;
+            Home = home;
+            FullAdress = country + sity + street + home;
         }
+        
 
 
     }
