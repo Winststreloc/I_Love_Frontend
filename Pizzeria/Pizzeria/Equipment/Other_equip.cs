@@ -8,11 +8,16 @@ namespace Pizzeria
     {
         private string Type { get; set;}
         private decimal Value { get; set; }
+        public Other_equip()
+        {
+
+        }
         public Other_equip(decimal value,string type)
         {
             Type = type;
             Value = value;
         }
+
         
     }
 }

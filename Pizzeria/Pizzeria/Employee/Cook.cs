@@ -9,7 +9,7 @@ namespace Pizzeria
         private readonly List<Equipment> _equipments = new List<Equipment>
         {
             new Furnace(),
-            new Other_equip()//TODO
+            new Other_equip()
         };
 
         public Pizza CreatePizza(PizzaName name, PizzaSize size)
