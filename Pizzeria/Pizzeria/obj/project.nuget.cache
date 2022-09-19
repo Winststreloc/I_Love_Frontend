@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "4f5LD0c+Vm6NJT+ZXNU1sCXBpCMhqozMkGFtz3vdeoVbVUdtqlO6iHQkqGPMLsk0fKsAaKALhhBvApqRzJOWlg==",
+  "dgSpecHash": "5Rbk2FxFeg9NASDXt4Cx/dicCW8bzsSUaSSh0DqclmKDdFM/HDzuX4kIBiN7Bnr48Qidv5euac8xaU2PkxQg5A==",
   "success": true,
-  "projectFilePath": "A:\\prPizza\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
-=======
-  "dgSpecHash": "iaSnvzUwfOz6vepYuV3t5OJZzVCLZEo9czTvqQEw6jsw+/SHvvZ7FvIs3Zai+sq6YVop9B/8tJb497bKbAo56w==",
-  "success": true,
-  "projectFilePath": "D:\\repos\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
->>>>>>> Feature/vasilevskiy/Eqipment
+  "projectFilePath": "D:\\Study\\NET17\\I_love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\Study\\NET17\\I_love_Frontend\\Pizzeria\\Pizzeria\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

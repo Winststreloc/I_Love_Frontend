@@ -9,11 +9,6 @@ namespace Pizzeria
     {
         private readonly Adress location;
 
-        public Adress GetLocation()
-        {
-            return location;
-        }
-
         List<Order> Orders { get; }
         public string Name { get; set; }
         public Client(string name, Adress location)

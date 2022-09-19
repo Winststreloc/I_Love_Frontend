@@ -26,11 +26,11 @@ namespace Pizzeria
             order.Id += 1;
             Orders.Add(order);
             Console.WriteLine("Order accepted");
-            Cook.CreatePizza(order.Pizza);
+            Cook.CreatePizza(order.PizzaName, order.PizzaSize);
 
             if(order.NeedDelivery)
             {
-                Deliveryman.Deliver(order.Pizza);
+                Deliveryman.Deliver(order.);
             }
             else
             {

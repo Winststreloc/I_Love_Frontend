@@ -11,13 +11,13 @@ namespace Pizzeria
             new Furnace(), 
             new Other_equip()
         };
-        public Pizza CreatePizza(Pizza pizza)
+        public Pizza CreatePizza(PizzaName name, PizzaSize size)
         {
             foreach (var equipment in _equipments)
             {
                 equipment.Show();
             }
-
+            Pizza pizza = new Pizza(name, size);
             return pizza;
         }
 

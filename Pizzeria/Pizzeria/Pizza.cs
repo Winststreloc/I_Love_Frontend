@@ -9,7 +9,7 @@ namespace Pizzeria
         public string Testo { get; set; }
         public PizzaSize PizzaSize { get; }
         public PizzaName PizzaName { get; }
-        public Pizza()
+        public Pizza(PizzaName pizzaName, PizzaSize pizzaSize)
         {
             
         }
