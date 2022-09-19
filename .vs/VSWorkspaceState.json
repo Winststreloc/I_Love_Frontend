@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Pizzeria",
+    "\\Pizzeria\\Pizzeria"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\Pizzeria\\Pizzeria.sln",
   "PreviewInSolutionExplorer": false
 }
