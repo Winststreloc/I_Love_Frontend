@@ -12,7 +12,9 @@ namespace Pizzeria
         public PizzaName PizzaName { get; }
         public Pizza(PizzaName pizzaName, PizzaSize pizzaSize)
         {
-            Pizza pizza = new Pizza(pizzaName, pizzaSize);
+            PizzaName = pizzaName;
+            PizzaSize = pizzaSize;
+            Testo = "normal";
         }
 
     }

@@ -19,7 +19,7 @@ namespace Pizzeria
             order.Id += 1;
             Orders.Add(order);
             Console.WriteLine("Order accepted");
-            var pizza = Cook.CreatePizza(order.PizzaName, order.PizzaSize);
+            Pizza pizza = Cook.CreatePizza(order.PizzaName, order.PizzaSize);
 
             if(order.NeedDelivery)
             {
