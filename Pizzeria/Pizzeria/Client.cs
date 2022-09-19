@@ -7,14 +7,13 @@ namespace Pizzeria
 {
     public class Client
     {
-        private readonly Adress location;
-
+        //TODOAdress location 
         List<Order> Orders { get; }
         public string Name { get; set; }
-        public Client(string name, Adress location)
+        public Client(string name)
         {
             Name = name;
-            this.location = location;
+            //TODO Location = location;
         }
         public Order Get(int id)
         {

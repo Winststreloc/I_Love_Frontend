@@ -10,6 +10,6 @@ namespace Pizzeria
         public void Call()
         {
             Console.WriteLine($"+{CallNumber}");
-        } 
+        }
     }
 }

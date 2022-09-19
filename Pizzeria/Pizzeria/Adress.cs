@@ -11,13 +11,13 @@ namespace Pizzeria
         public string Street { get; set; }
         public string Home {get; set;}
         public string FullAdress { get; }
-        public Adress(string country,string sity,string street,string home)
+        public Adress(string country,string сity,string street,string home)
         {
             Country = country;
-            Сity = sity;
+            Сity = сity;
             Street = street;
             Home = home;
-            FullAdress = country + sity + street + home;
+            FullAdress = country + сity + street + home;
         }
     }
 }
