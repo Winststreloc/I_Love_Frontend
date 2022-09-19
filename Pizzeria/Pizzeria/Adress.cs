@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Pizzeria
 {
-    class Adress
+    public class Adress
     {
         public string Country { get; set; }
         public string Сity { get; set; }
