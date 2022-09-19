@@ -8,7 +8,7 @@ namespace Pizzeria
     {
         public List<Order> Orders { get; } = new List<Order>();
         public Cook Cook { get; set; } = new Cook();
-        public Deliveryman Deliveryman { get; } 
+        public Deliveryman Deliveryman { get; set; } 
         public ShopAssistant(string name)
         {
             Name = name;

@@ -17,7 +17,7 @@ namespace Pizzeria
             Сity = сity;
             Street = street;
             Home = home;
-            FullAdress = country + сity + street + home;
+            FullAdress = country + " "+ сity + " " + street + " " + home;
         }
     }
 }
