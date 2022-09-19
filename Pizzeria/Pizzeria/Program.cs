@@ -13,9 +13,6 @@ namespace Pizzeria
             var deliveryman = new Deliveryman { Client = client };
             var shopAssistant = new ShopAssistant("Igor") { Deliveryman = deliveryman };
             shopAssistant.AcceptOrder(order);
-
-            shopAssistant.AcceptOrder(order);
-
         } 
     }
 }
