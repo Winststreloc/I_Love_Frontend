@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "A:\\prPizza\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj": {}
   },
   "projects": {
@@ -18,6 +19,22 @@
         ],
         "configFilePaths": [
           "C:\\Users\\Дарья Заблоцкая\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "D:\\repos\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj": {}
+  },
+  "projects": {
+    "D:\\repos\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\repos\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
+        "projectName": "Pizzeria",
+        "projectPath": "D:\\repos\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
+        "packagesPath": "C:\\Users\\vasilevskiy\\.nuget\\packages\\",
+        "outputPath": "D:\\repos\\I_Love_Frontend\\Pizzeria\\Pizzeria\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\vasilevskiy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Feature/vasilevskiy/Eqipment
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
