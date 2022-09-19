@@ -1,24 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Study\\NET17\\I_love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj": {}
+<<<<<<< HEAD
+    "A:\\prPizza\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj": {}
   },
   "projects": {
-    "D:\\Study\\NET17\\I_love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj": {
+    "A:\\prPizza\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\NET17\\I_love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
+        "projectUniqueName": "A:\\prPizza\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
         "projectName": "Pizzeria",
-        "projectPath": "D:\\Study\\NET17\\I_love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
-        "packagesPath": "C:\\Users\\goloo\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\NET17\\I_love_Frontend\\Pizzeria\\Pizzeria\\obj\\",
+        "projectPath": "A:\\prPizza\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
+        "packagesPath": "C:\\Users\\Дарья Заблоцкая\\.nuget\\packages\\",
+        "outputPath": "A:\\prPizza\\I_Love_Frontend\\Pizzeria\\Pizzeria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\goloo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Дарья Заблоцкая\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "D:\\repos\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj": {}
+  },
+  "projects": {
+    "D:\\repos\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\repos\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
+        "projectName": "Pizzeria",
+        "projectPath": "D:\\repos\\I_Love_Frontend\\Pizzeria\\Pizzeria\\Pizzeria.csproj",
+        "packagesPath": "C:\\Users\\vasilevskiy\\.nuget\\packages\\",
+        "outputPath": "D:\\repos\\I_Love_Frontend\\Pizzeria\\Pizzeria\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\vasilevskiy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Feature/vasilevskiy/Eqipment
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -13,10 +13,6 @@ namespace Pizzeria
         private int Capacity { get; set; }
         private double Cost { get; set; }
         private const double _tariff = 0.2;
-        public Furnace()
-        {
-
-        }
 
         public Furnace(Equipment obj,string firm,int capacity)
         {
@@ -30,6 +26,5 @@ namespace Pizzeria
 
             return cost;
         }
-       
     }
 }

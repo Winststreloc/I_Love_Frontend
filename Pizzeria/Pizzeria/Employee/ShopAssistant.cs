@@ -13,13 +13,12 @@ namespace Pizzeria
         Deliveryman deliveryman = new Deliveryman{Client=client};
         ShopAssiistant assistant = new ShopAssistant{Deliveryman=deliveryman};
         */
-        List<Order> Orders { get; }
+        public List<Order> Orders { get; } = new List<Order>();
         public Cook Cook { get; set; } = new Cook();
         public Deliveryman Deliveryman { get; set; } 
         public ShopAssistant(string name)
         {
             Name = name;
-            Orders = new List<Order>();
         }
 
         public void AcceptOrder(Order order)
@@ -27,7 +26,17 @@ namespace Pizzeria
             order.Id += 1;
             Orders.Add(order);
             Console.WriteLine("Order accepted");
-            //Deliveryman.Deliver();
+            Cook.CreatePizza(order.Pizza);
+
+            if(order.NeedDelivery)
+            {
+                Deliveryman.Deliver(order.Pizza);
+            }
+            else
+            {
+                Console.WriteLine("Order ready! Take your order!");
+            }
+           
         }
     }
 }
