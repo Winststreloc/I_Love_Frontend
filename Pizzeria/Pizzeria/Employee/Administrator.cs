@@ -37,5 +37,9 @@ namespace Pizzeria
                 Console.WriteLine($"salary of {employee.Name} is {employee.Salary}");
             }
         }
+        public new void Perekyr() //chmolimorfizm
+        {
+            Console.WriteLine("Admin ne hodit na perekyr");
+        }
     }
 }
