@@ -19,6 +19,16 @@ namespace Pizzeria
 
     }
 
-    public enum PizzaSize { Small, Medium, Large }
-    public enum PizzaName { Pepperoni, Margherita, Cheese }
+    public enum PizzaSize
+    {
+        Small = 8,
+        Medium = 12,
+        Large = 16
+    }
+    public enum PizzaName
+    {
+        Pepperoni = 10,
+        Margherita = 13,
+        Cheese = 9
+    }
 }
