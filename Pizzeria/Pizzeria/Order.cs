@@ -16,6 +16,7 @@ namespace Pizzeria
         public Adress ClientLocation { get; }
         public PizzaName PizzaName { get; set; }
         public PizzaSize PizzaSize { get; set; }
+        DateTime TimeCreateOrder;
 
         public Order(PizzaName pizzaName,PizzaSize pizzaSize, bool deliver, string clientName, Adress clientlocation)
         {
@@ -25,6 +26,8 @@ namespace Pizzeria
             NeedDelivery = deliver;
             ClientName = clientName;
             ClientLocation = clientlocation;
+            DateTime timecreateorder = DateTime.Now;
+            Console.WriteLine($"Time create order: {timecreateorder}");
         }
     }
 }

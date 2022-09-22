@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace Pizzeria
 {
@@ -24,6 +25,7 @@ namespace Pizzeria
         }
         public void Show()
         {
+            Thread.Sleep(2000);
             Console.WriteLine($"name of equipment {name_of_equip}; inventory number {inventory_number}; Time {DateTime.Now}");
         }
 
