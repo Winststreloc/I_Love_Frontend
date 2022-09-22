@@ -15,7 +15,7 @@ namespace Pizzeria
             Console.WriteLine($"The employee's name is {Name}, he is {Age} years old," +
                 $" work experience is {WorkExperience} and my salary is {Salary}");
         }
-        public void Perekyr()
+        public virtual void Perekyr()
         {
             Console.WriteLine("Vyshel na pereker");
         }
