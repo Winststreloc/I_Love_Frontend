@@ -7,6 +7,10 @@ namespace Pizzeria
     public class Administrator : Employee
     {
         private List<Employee> _employees = new List<Employee>();
+        public Administrator(string name)
+        {
+            Name = name;
+        }
         public void AddEmployee(Employee employee)
         {
             _employees.Add(employee);

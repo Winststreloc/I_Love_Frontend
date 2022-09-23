@@ -13,7 +13,14 @@ namespace Pizzeria
             Name = "Little Italy";
             Adress AdressPizzeria = new Adress("Belarus", "Minsk", "Timirazeva", "67");
             Console.WriteLine("Name: {0} \nAdress: {1}", Name, AdressPizzeria.FullAdress);
-        } 
+
+        }
+        
+        public void AddEmployy(string name, int age, int WorkExperience)
+        {
+            
+        }
+
     }
    
 }

@@ -6,7 +6,6 @@ namespace Pizzeria
 {
     public class Order
     {
-        private decimal Price { get; set; }
         public int Id { get; set; }
         public string ClientName { get; set; }
         public bool NeedDelivery { get; set; }
