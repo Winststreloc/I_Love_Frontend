@@ -27,10 +27,24 @@ namespace Pizzeria
         }
         public void UserEnterParam()
         {
+            while (ExamUserFirstVisit())
+            {
+                Console.WriteLine("Enter you name");
+                string name = Console.ReadLine();
+                Console.WriteLine("Enter you password");
+                string password = Console.ReadLine();
+                Client _userTemp = new Client(name, password);
+                if (!ExamUser(_userTemp))
+                {
+                    Console.WriteLine("Incorrect parameters");
+                }
+            }
+            (string, string, Adress) userparam = EnterUserParam();
+            Client userTemp = new Client(userparam.Item1, userparam.Item3);
+            Users.Add(userTemp);
+
 
             bool endApp = false;
-            (string, string, Adress) userparam = HelloUser();
-            Users.Add(Users[0]);
             while (!endApp)
             {
                 Console.WriteLine("okey, you want create order?");
@@ -41,15 +55,19 @@ namespace Pizzeria
                 }
             }
             Console.WriteLine("Bye!");
-            bool EnterValue()
-            {
-                return endApp;
-            }
-            EnterValue();
         }
-        public (string, string, Adress) HelloUser()
+        public bool ExamUser(Client user)
         {
-            Console.WriteLine("Hello, what's your name?");
+            return Users.Contains(user) ? true : false;
+        }
+        public bool ExamUserFirstVisit()
+        {
+            Console.WriteLine("Are you here for the first time?");
+            return Console.ReadLine() == "no";
+        }
+        public (string, string, Adress) EnterUserParam()
+        {
+            Console.WriteLine("What's your name?");
             string userName = Console.ReadLine();
             Console.WriteLine("Enter your Adress");
             Adress userAdress = new Adress(Console.ReadLine());

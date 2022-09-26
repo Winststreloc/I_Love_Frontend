@@ -19,7 +19,7 @@ namespace Pizzeria
             Street = street;
             Home = home;
         }
-        public Adress(string street)
+            public Adress(string street)
         {
             Street = street;
         

@@ -16,6 +16,11 @@ namespace Pizzeria
             Name = name;
             Adress = location;
         }
+        public Client(string name, string password)
+        {
+            Name = name;
+            Password = password;
+        }
         private Order Get(int id)
         {
             return Orders.FirstOrDefault(p => p.Id == id);
