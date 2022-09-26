@@ -18,6 +18,7 @@ namespace Pizzeria
 
         public Pizza CreatePizza(PizzaName name, PizzaSize size)
         {
+            Console.WriteLine("The cook uses to prepare pizza:");
             foreach (var equipment in _equipments)
             {
                 equipment.Show();
