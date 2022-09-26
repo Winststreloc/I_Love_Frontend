@@ -7,19 +7,19 @@ namespace Pizzeria
     public class ShopAssistant : Employee
     {
         public List<Order> Orders { get; } = new List<Order>();
-        public Cook Cook { get; set; } = new Cook();
         public Deliveryman Deliveryman { get; set; } 
         public ShopAssistant(string name)
         {
             Name = name;
         }
 
-        public void AcceptOrder(Order order)
+        public void AcceptOrder(Order order, Cook cook)
         {
             order.Id += 1;
             Orders.Add(order);
             Console.WriteLine("Order accepted");
-            Pizza pizza = Cook.CreatePizza(order.PizzaName, order.PizzaSize);
+            Cook cook1 = cook;
+            Pizza pizza = cook.CreatePizza(order.PizzaName, order.PizzaSize);
 
             if(order.NeedDelivery)
             {

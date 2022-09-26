@@ -6,21 +6,21 @@ namespace Pizzeria
     {
         static void Main(string[] args)
         {
-            Pizzeria pizzeria = new Pizzeria();
-
+            Pizzeria pizzeria = new Pizzeria("Dominoz");
+            pizzeria.CreateAdress("Belarus", "Minsk", "Yakeba Kolasa", "26");
+            pizzeria.AddEmployy(new Administrator("Ivan"));
+            pizzeria.AddEmployy(new Deliveryman("Egor"));
+            pizzeria.AddEmployy(new ShopAssistant("Vlad"));
+            pizzeria.AddEmployy(new Cook("Kirill"));
+            pizzeria.UserEnterParam();
+            
 
             Adress clientLocation = new Adress("Belarus", "Minsk", "Yakuba Kolasa", "26");
             Client client = new Client("Ivan", clientLocation);
 
-            Employee admin = new Administrator("Ivan");
-            admin.Perekyr();
 
             Order order = client.CreateOrder(client.Name, PizzaName.Margherita, PizzaSize.Medium, false, clientLocation);
             
-            var deliveryman = new Deliveryman { Client = client };
-            deliveryman.Perekyr();
-            var shopAssistant = new ShopAssistant("Igor") { Deliveryman = deliveryman };
-            shopAssistant.AcceptOrder(order);
         } 
     }
 }

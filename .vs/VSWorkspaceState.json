@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Pizzeria"
+    "\\Pizzeria",
+    "\\Pizzeria\\Pizzeria",
+    "\\Pizzeria\\Pizzeria\\Equipment"
   ],
-  "SelectedNode": "\\Pizzeria\\Pizzeria.sln",
-  "PreviewInSolutionExplorer": false
+  "SelectedNode": "\\Pizzeria\\Pizzeria\\Pizzeria.cs",
+  "PreviewInSolutionExplorer": true
 }

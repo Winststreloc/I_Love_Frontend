@@ -6,6 +6,10 @@ namespace Pizzeria
 {
     public class Cook : Employee
     {
+        public Cook(string name)
+        {
+            Name = name;
+        }
         private readonly List<Equipment> _equipments = new List<Equipment>
         {
             new Furnace("Furnace", 1),

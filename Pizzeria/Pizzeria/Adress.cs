@@ -6,18 +6,27 @@ namespace Pizzeria
 {
     public class Adress
     {
+
         public string Country { get; set; }
-        public string Сity { get; set; }
+        public string City { get; set; }
         public string Street { get; set; }
         public string Home {get; set;}
-        public string FullAdress { get; }
-        public Adress(string country,string сity,string street,string home)
+        public string FullAdress { get; set; }
+        public Adress(string country,string city,string street,string home)
         {
             Country = country;
-            Сity = сity;
+            City = city;
             Street = street;
             Home = home;
-            FullAdress = country + " "+ сity + " " + street + " " + home;
+            FullAdress = country + " "+ city + " " + street + " " + home;
+        }
+        public Adress(string street)
+        {
+            Street = street;
+        }
+        public Adress CreateAdress(string country, string city, string street, string home)
+        {
+            return new Adress(country, city, street, home);
         }
     }
 }

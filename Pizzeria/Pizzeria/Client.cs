@@ -15,7 +15,7 @@ namespace Pizzeria
             Name = name;
             Location = location;
         }
-        public Order Get(int id)
+        private Order Get(int id)
         {
             return Orders.FirstOrDefault(p => p.Id == id);
         }
@@ -30,6 +30,7 @@ namespace Pizzeria
             var order = Get(id);
             Orders.Remove(order);
         }
+       
 
     }
 }
