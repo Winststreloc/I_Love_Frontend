@@ -7,13 +7,14 @@ namespace Pizzeria
 {
     public class Client
     {
-        public Adress Location { get; }
+        public Adress Adress { get; }
+        private string Password { get; }
         List<Order> Orders { get; }
         public string Name { get; set; }
         public Client(string name, Adress location)
         {
             Name = name;
-            Location = location;
+            Adress = location;
         }
         private Order Get(int id)
         {

@@ -12,8 +12,8 @@ namespace Pizzeria
             pizzeria.AddEmployy(new Deliveryman("Egor"));
             pizzeria.AddEmployy(new ShopAssistant("Vlad"));
             pizzeria.AddEmployy(new Cook("Kirill"));
+            Console.WriteLine(pizzeria.AdressPizzeria);
             pizzeria.UserEnterParam();
-            
 
             Adress clientLocation = new Adress("Belarus", "Minsk", "Yakuba Kolasa", "26");
             Client client = new Client("Ivan", clientLocation);
