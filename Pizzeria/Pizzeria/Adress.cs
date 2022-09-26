@@ -10,20 +10,18 @@ namespace Pizzeria
         public string Country { get; set; }
         public string City { get; set; }
         public string Street { get; set; }
-        public string Home {get; set;}
+        public string Home { get; set; }
         public string FullAdress => Country + " " + City + " " + Street + " " + Home;
-        public Adress(string country,string city,string street,string home)
+        public Adress(string country, string city, string street, string home)
         {
             Country = country;
             City = city;
             Street = street;
             Home = home;
         }
-            public Adress(string street)
+        public Adress(string street)
         {
             Street = street;
-        
-        
         }
         public Adress CreateAdress(string country, string city, string street, string home)
         {

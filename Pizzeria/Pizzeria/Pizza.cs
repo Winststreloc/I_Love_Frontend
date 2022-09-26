@@ -17,6 +17,37 @@ namespace Pizzeria
             Testo = "normal";
         }
 
+        public (PizzaName, PizzaSize) ReturnParamOfPizza(string name, string size)
+        {
+            PizzaName pizzaName = default;
+            PizzaSize pizzaSize = default;
+            if (name == "pepperoni")
+            {
+                pizzaName = PizzaName.Pepperoni;
+            }
+            else if (name == "marhgerita")
+            {
+                pizzaName = PizzaName.Margherita;
+            }
+            else
+            {
+                pizzaName = PizzaName.Cheese;
+            }
+            if (size == "small")
+            {
+                pizzaSize = PizzaSize.Small;
+            }
+            else if (size == "medium")
+            {
+                pizzaSize = PizzaSize.Medium;
+            }
+            else
+            {
+                pizzaSize = PizzaSize.Large;
+            }
+            return (pizzaName, pizzaSize);
+        }
+
     }
 
     public enum PizzaSize

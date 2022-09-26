@@ -7,9 +7,12 @@ namespace Pizzeria
 {
     public class Pizzeria
     {
-        public List<Employee> Employees { get; } = new List<Employee>();
-        public List<Client> Users { get; } = new List<Client>();
-        
+
+        List<Employee> Employees { get; } = new List<Employee>();
+        User User {get; set;}
+        ShopAssistant shopAssistant { get; }
+        Cook cook { get; set; }
+
         public string Name { get; }
         public string AdressPizzeria { get; }
         public Pizzeria(string name)
@@ -25,55 +28,19 @@ namespace Pizzeria
         {
             Employees.Add(newEmployee);
         }
-        public void UserEnterParam()
+        public void CreateEmpoyy(Pizzeria pizzeria)
         {
-            while (ExamUserFirstVisit())
-            {
-                Console.WriteLine("Enter you name");
-                string name = Console.ReadLine();
-                Console.WriteLine("Enter you password");
-                string password = Console.ReadLine();
-                Client _userTemp = new Client(name, password);
-                if (!ExamUser(_userTemp))
-                {
-                    Console.WriteLine("Incorrect parameters");
-                }
-            }
-            (string, string, Adress) userparam = EnterUserParam();
-            Client userTemp = new Client(userparam.Item1, userparam.Item3);
-            Users.Add(userTemp);
-
-
-            bool endApp = false;
-            while (!endApp)
-            {
-                Console.WriteLine("okey, you want create order?");
-                string answer = Console.ReadLine();
-                if (answer == "no")
-                {
-                    endApp = true;
-                }
-            }
-            Console.WriteLine("Bye!");
+            pizzeria.CreateAdress("Belarus", "Minsk", "Yakeba Kolasa", "26");
+            pizzeria.AddEmployy(new Administrator("Ivan"));
+            pizzeria.AddEmployy(new Deliveryman("Egor"));
+            pizzeria.AddEmployy(new ShopAssistant("Vlad"));
+            pizzeria.AddEmployy(new Cook("Kirill"));
         }
-        public bool ExamUser(Client user)
+        public void StartPizzeria(Pizzeria pizzeria)
         {
-            return Users.Contains(user) ? true : false;
-        }
-        public bool ExamUserFirstVisit()
-        {
-            Console.WriteLine("Are you here for the first time?");
-            return Console.ReadLine() == "no";
-        }
-        public (string, string, Adress) EnterUserParam()
-        {
-            Console.WriteLine("What's your name?");
-            string userName = Console.ReadLine();
-            Console.WriteLine("Enter your Adress");
-            Adress userAdress = new Adress(Console.ReadLine());
-            Console.WriteLine("Well, enter you password");
-            string userPassword = Console.ReadLine();
-            return (userName, userPassword, userAdress);
+            CreateEmpoyy(pizzeria);
+            Order order = User.UserEnterParam();
+            shopAssistant.AcceptOrder(order, cook);
         }
 
     }
